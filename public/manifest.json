@@ -1,0 +1,38 @@
+{
+  "id": "./",
+  "name": "صلاتي | قضاء ما في الذمة",
+  "short_name": "صلاتي",
+  "description": "تطبيق متكامل لمتابعة وتوثيق قضاء الصلوات الفائتة في بيئة آمنة وخاصة ومحفزة.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#064e3b",
+  "theme_color": "#064e3b",
+  "lang": "ar",
+  "dir": "rtl",
+  "categories": [
+    "lifestyle",
+    "utilities"
+  ],
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
