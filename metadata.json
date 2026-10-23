@@ -1,0 +1,6 @@
+{
+  "name": "صلاتي | قضاء ما في الذمة",
+  "description": "تطبيق متكامل لمتابعة وتوثيق قضاء الصلوات الفائتة في بيئة آمنة وخاصة ومحفزة.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
