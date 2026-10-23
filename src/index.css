@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --font-sans: 'Tajawal', 'Cairo', 'Segoe UI', Tahoma, Arial, sans-serif;
+    --font-serif: 'Amiri', 'Traditional Arabic', 'Scheherazade New', Georgia, serif;
+    --emerald-primary: #064e3b;
+    --emerald-light: #065f46;
+    --gold-primary: #d4af37;
+    --gold-light: #fef3c7;
+    --gold-dark: #b45309;
+  }
+
+  html {
+    font-family: var(--font-sans);
+    direction: rtl;
+    text-align: right;
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    font-family: var(--font-sans);
+  }
+}
+
+.font-amiri {
+  font-family: 'Amiri', Georgia, serif;
+}
+
+.font-tajawal {
+  font-family: 'Tajawal', sans-serif;
+}
+
+/* Subtle Islamic geometric pattern background */
+.islamic-pattern {
+  background-color: transparent;
+  background-image: radial-gradient(rgba(212, 175, 55, 0.08) 1px, transparent 1px), radial-gradient(rgba(6, 78, 59, 0.06) 1px, transparent 1px);
+  background-size: 24px 24px;
+  background-position: 0 0, 12px 12px;
+}
+
+.dark .islamic-pattern {
+  background-image: radial-gradient(rgba(212, 175, 55, 0.12) 1px, transparent 1px), radial-gradient(rgba(16, 185, 129, 0.05) 1px, transparent 1px);
+}
+
+/* Certificate frame explicit colors and Arabic ligatures for html2canvas compatibility */
+.certificate-frame {
+  background-color: #fdfcf7 !important;
+  color: #1c1917 !important;
+  border-color: #b45309 !important;
+  letter-spacing: 0px !important;
+  font-feature-settings: "liga" 1, "calt" 1, "rlig" 1 !important;
+}
+
+/* Certificate printable styles */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  .certificate-frame {
+    box-shadow: none !important;
+    border: 4px double #d4af37 !important;
+    page-break-inside: avoid;
+    width: 100% !important;
+    margin: 0 !important;
+  }
+}
+
